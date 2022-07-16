@@ -1,0 +1,119 @@
+/*navbar styling*/
+
+.navbar{
+    background-color: green;
+    padding: 10px;
+    position: fixed;
+    width: 97%;
+    margin-top: -10px;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline;
+    padding: 30px;
+    margin-left: 25px;
+    transition: all 0.9s ease;
+}
+
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    margin-left: 50px;
+    font-family: 'Oleo Script Swash Caps';font-size: 32px;
+
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.navbar .menu li a:hover{
+    color: yellow
+}
+
+.navbar .logo a span{
+    color: white;
+}
+
+#text1{
+    margin-top: 30px;
+}
+
+input{
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 10px;
+    margin-inline-start: 100px;
+    font-weight: bolder;
+    border: 3px solid green;
+    text-align: center;
+}
+
+#btn1{
+    margin-inline-start: 450px;
+    border-radius: 5px;
+    height: 40px;
+    width: 10%;
+    color: white;
+    background: green;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+p{
+    margin-inline-start: 100px;
+    font-weight: bolder; 
+    font-size: 25px;
+}
+
+#total{
+    margin-inline-start: 235px;
+    border: 3px solid green;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 80px;
+    font-size: 50px;
+    color: green;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+#image1{
+    float: right;
+    margin-top: 20px;
+    border-radius: 80px;
+    width: 50%;
+    height: 70%;
+    margin-inline-end: 30px;
+}
+
+.income{
+    margin-inline-end: -70px;
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+#image2{
+    float: left;
+    width: 45%;
+    height: 50%;
+    border-radius: 100px;
+}

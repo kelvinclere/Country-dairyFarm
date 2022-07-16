@@ -1,0 +1,72 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Dairy Farm</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/9954df96fc.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
+</head>
+<body>
+<body style="background-color: #FAFAFA;">
+
+<div class="navbar">
+<div class="max-width">
+<div class="logo"><a href="#">Country Dairy Farm</a></div>
+<ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Income</a></li>
+    <li><a href="#">Report</a></li>
+    <li><a href="#">Products</a></li>
+
+</ul>
+</div>
+</div>
+
+<input>
+<h1 id="text1">Home</h1>
+<img id="image1" src="images/dairy 1.jpg">
+<p> Your production in Shed A: <input id="shedA"></p>
+<p> Your production in shed B: <input id="shedB"></p>
+<p> Your production in Shed C: <input id="shedC"></p>
+<p> Your production in Shed D: <input id="shedD"></p>
+<button id="btn1" onclick="add()">Generate Report</button>
+<p>Total = <input id="total"></p>
+</input>
+
+<h1>Income</h1>
+
+<div class="income">
+<img id="image2" src="images/image6.jpg">
+<p> Weekly income: <input id="weeklyIncome"></p>
+<p> Yearly income: <input id="yearlyIncome"></p>
+</div>
+
+<script src="main.js"></script>
+
+<script>
+    function add()
+    {
+      var shedA, shedB, shedC, shedD, total;
+      shedA = parseInt(document.getElementById("shedA").value);
+      shedB = parseInt(document.getElementById("shedB").value);
+      shedC = parseInt(document.getElementById("shedC").value);
+      shedD = parseInt(document.getElementById("shedD").value);
+      weeklyIncome = parseInt(document.getElementById("weeklyIncome").value)
+      yearlyIncome = parseInt(document.getElementById("yearlyIncome").value)
+
+      total = shedA + shedB + shedC + shedD;
+      weeklyIncome = total*7*45;
+      yearlyIncome = weeklyIncome*54
+
+
+      document.getElementById("total").value = total;
+      document.getElementById("weeklyIncome").value = weeklyIncome
+      document.getElementById("yearlyIncome").value = yearlyIncome
+    }
+    </script>
+
+</body>
+</html>
