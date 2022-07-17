@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@
     <script src="https://kit.fontawesome.com/9954df96fc.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
 </head>
+
 <body>
 <body style="background-color: #FAFAFA;">
 
@@ -24,49 +27,35 @@
 </ul>
 </div>
 </div>
+    
+            <section>
+            <h1 id="text1">Home</h1>
+            <img id="image1" src="images/dairy 1.jpg">
+            <p><b>Production in:</b></p>
+            <p>Shed A: <input id="first-a"></p>
+            <p>Shed B: <input id="first-b"></p>
+            <p>Shed C: <input id="first-c"></p>
+            <p>Shed D: <input id="first-d"></p>
+            </section>
 
-<input>
-<h1 id="text1">Home</h1>
-<img id="image1" src="images/dairy 1.jpg">
-<p> Your production in Shed A: <input id="shedA"></p>
-<p> Your production in shed B: <input id="shedB"></p>
-<p> Your production in Shed C: <input id="shedC"></p>
-<p> Your production in Shed D: <input id="shedD"></p>
-<button id="btn1" onclick="add()">Generate Report</button>
-<p>Total = <input id="total"></p>
-</input>
-
-<h1>Income</h1>
-
-<div class="income">
-<img id="image2" src="images/image6.jpg">
-<p> Weekly income: <input id="weeklyIncome"></p>
-<p> Yearly income: <input id="yearlyIncome"></p>
-</div>
-
-<script src="main.js"></script>
-
-<script>
-    function add()
-    {
-      var shedA, shedB, shedC, shedD, total;
-      shedA = parseInt(document.getElementById("shedA").value);
-      shedB = parseInt(document.getElementById("shedB").value);
-      shedC = parseInt(document.getElementById("shedC").value);
-      shedD = parseInt(document.getElementById("shedD").value);
-      weeklyIncome = parseInt(document.getElementById("weeklyIncome").value)
-      yearlyIncome = parseInt(document.getElementById("yearlyIncome").value)
-
-      total = shedA + shedB + shedC + shedD;
-      weeklyIncome = total*7*45;
-      yearlyIncome = weeklyIncome*54
+        <button id="btn1" onclick="report()">Generate Report</button>
 
 
-      document.getElementById("total").value = total;
-      document.getElementById("weeklyIncome").value = weeklyIncome
-      document.getElementById("yearlyIncome").value = yearlyIncome
-    }
-    </script>
+        <div class="report">
+            <h2>Report</h2>
+            <div id="total">
+                
+            </div>
+            <div id="income">
+                
+            </div>
+            <div id="LeapYear">
 
+            </div>
+        </div>
+
+        <hr>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
