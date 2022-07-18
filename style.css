@@ -131,10 +131,11 @@ footer{
     width: 100%;
     font-size: large;
     color:black;
-    display: flex;
     flex-direction: row wrap;
     justify-content: space-between;
-    text-align: center;
     padding-top: 60px;
     margin-top: 10px;
+  }
+  #footer1, span{
+    text-align: center;
   }
